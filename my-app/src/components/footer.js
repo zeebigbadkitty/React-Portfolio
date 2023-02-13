@@ -1,6 +1,6 @@
 import React from "react";
-import {ResponsiveEmbed, Image} from 'react-bootstrap';
 import { MDBFooter, MDBContainer, MDBCol, MDBRow, } from "mdb-react-ui-kit";
+import '../css/style.css';   {/* Is this linked right?*/}
 
 export default function App() {
   return (
@@ -14,9 +14,10 @@ export default function App() {
             <h5 className="text-uppercase">Candice Radam</h5>
 
             <p>
-              <Image className="rounded-circle shadow-4-strong"
+              <img className="rounded-circle shadow-4-strong"
                 source={require('../images/photo3.jpg')}  
-              />
+              /> 
+              {/* This image won't render */}
             </p>
           </MDBCol>
 
@@ -51,13 +52,13 @@ export default function App() {
             <ul className="list-unstyled">
               <li>
                 <p>
-                  <i class="fas fa-map-marker-alt pe-2"></i>Austin, Texas
+                  <i className="fas fa-map-marker-alt pe-2"></i>Austin, Texas
                 </p>
               </li>
               <li></li>
               <li>
                 <p>
-                  <i class="fas fa-envelope pe-2 mb-0"></i>
+                  <i className="fas fa-envelope pe-2 mb-0"></i>
                   <a href="mailto:candice.radam@gmail.com">
                     candice.radam@gmail.com
                   </a>
