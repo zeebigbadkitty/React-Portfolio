@@ -1,39 +1,12 @@
 import React from "react";
 import "../css/style.css";
 
-
-// https://w3collective.com/react-contact-form/
-
-const Forms = () => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
-  
-  export default function Forms() {
-  return (
-   
+export default function Forms() {
+    return (
       <div>
 
           <h2 id="sec5">Contact Form</h2>
-          <form class="text-center border border-light p-5" onSubmit={handleSubmit}>
+          <form class="text-center border border-light p-5" action="#!">
             <p class="h4 mb-4">Connect with me!</p>
 
 
@@ -80,5 +53,3 @@ const Forms = () => {
 
     );
   }
-
-  export default Forms;
