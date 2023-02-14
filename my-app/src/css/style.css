@@ -28,9 +28,10 @@ body {
 }
 #masthead .well {
   margin-top: 2%;
-  text-align: center;
+  text-align: left;
   background-color: #111155;
   border-radius: 10px;
+  width:450px;
 }
 
 .icon-bar {
@@ -99,7 +100,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .img-responsive {
-  width: 125px;
+  width: 450px;
   display: inline-block;
   align-items: center;
 }

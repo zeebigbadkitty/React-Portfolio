@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/style.css';
-
+import cardgif from '../images/cardgif.gif';
 
 export default function Header() {
   
@@ -66,12 +66,13 @@ export default function Header() {
             <div className="well well-lg">
               <div className="row">
                 <div className="col-sm-6">
-                  {/* <img
-                    src="/public/images/IMG_20210815_181333.jpg"
+                  <img
+                    src={cardgif}
                     className="img-responsive"
-                  /> */}
+                  />
                 </div>
                 <div className="col-sm-6">
+                  <br></br>
                   <strong>Candice Radam</strong>
                   <p>Reach me:</p>
                   <p><i className="devicon-google-plain"></i><a href="mailto:candice.radam@gmail.com">   Gmail</a></p>

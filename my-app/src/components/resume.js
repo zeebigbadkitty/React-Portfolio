@@ -1,44 +1,62 @@
 import React from "react";
 import "../css/style.css";
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page } from 'react-pdf';
+import resume from './resume/resume.pdf'
 
-const Resume = () => {
+export default function SinglePage(props) {
 	const [numPages, setNumPages] = useState(null);
-	const [pageNumber, setPageNumber] = useState(1);
+	const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
+  
+	function onDocumentLoadSuccess({ numPages }) {
+	  setNumPages(numPages);
+	  setPageNumber(1);
+	}
+  
+	function changePage(offset) {
+	  setPageNumber(prevPageNumber => prevPageNumber + offset);
+	}
+  
+	function previousPage() {
+	  changePage(-1);
+	}
+  
+	function nextPage() {
+	  changePage(1);
+	}
+  
+	const { pdf } = props;
 
-	const onDocumentLoadSuccess = ({ numPages }) => {
-		setNumPages(numPages);
-	};
-
-	const goToPrevPage = () =>
-		setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
-
-	const goToNextPage = () =>
-		setPageNumber(
-			pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
-		);
 
     return (
-      <div>
+
+		<div>
           <hr />
          <h2 id="sec3">Resume</h2>
-         <nav>
-				<button onClick={goToPrevPage}>Prev</button>
-				<button onClick={goToNextPage}>Next</button>
-				<p>
-					Page {pageNumber} of {numPages}
-				</p>
-			</nav>
-
-			<Document
-				file="../resume/resume.pdf" 
-				onLoadSuccess={onDocumentLoadSuccess}
-			>
-				<Page pageNumber={pageNumber} />
-			</Document>
-		</div>
+      <Document
+        file={resume}
+        options={{ workerSrc: "/pdf.worker.js" }}
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <div>
+        <p>
+          Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+        </p>
+        <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+          Previous
+        </button>
+        <button
+          type="button"
+          disabled={pageNumber >= numPages}
+          onClick={nextPage}
+        >
+          Next
+        </button>
+      </div>
+</div>
 	);
 };
 
-export default Resume;
+
