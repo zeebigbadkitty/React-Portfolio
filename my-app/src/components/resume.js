@@ -3,7 +3,7 @@ import "../css/style.css";
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
-const App = () => {
+const Resume = () => {
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
 
@@ -41,4 +41,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default Resume;

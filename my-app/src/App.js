@@ -6,6 +6,7 @@ import Portfolio from './components/portfolio.js';
 import Skills from './components/skills.js';
 import Body from './components/body.js';
 import Footer2 from './components/footer2.js';
+import ContactForm from './js/contactform.js';
 
 function App() {
   return (
