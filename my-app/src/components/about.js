@@ -2,34 +2,9 @@ import React from "react";
 import "../css/style.css";
 import Portfolio from './portfolio.js';
 
-export default function App() {
+export default function About() {
   return (
     <div>
-      <div className="container flex-main" style={'width:100%'}>
-        <div className="row">
-          <div className="col-md-3" id="leftCol">
-            <ul className="nav nav-stacked" id="sidebar">
-              <li>
-                <a href="#sec0">About Me</a>
-              </li>
-              <li>
-                <a href="#sec1">Projects and Portfolio</a>
-              </li>
-              <li>
-                <a href="#sec2">Skills</a>
-              </li>
-              <li>
-                <a href="#sec3">Resume</a>
-              </li>
-              <li>
-                <a href="#sec4">Licenses and Certifications</a>
-              </li>
-              <li>
-                <a href="#sec5">Contact Form</a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <br />
         <div className="about">
         <h2 id="sec0">About Me</h2>
@@ -43,9 +18,8 @@ export default function App() {
         </p>
 
         <hr />
-        <Portfolio />
-      </div>
       </div>
     </div>
   );
 }
+

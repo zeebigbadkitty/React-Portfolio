@@ -4,13 +4,13 @@ import Header from './components/header.js';
 import About from './components/about.js';
 import Portfolio from './components/portfolio.js';
 import Skills from './components/skills.js';
+import Body from './components/body.js';
 
 function App() {
   return (
     <div>
     <Header />
-    <About />
-    <Skills />
+    <Body />
     <Footer />
     </div>
  );

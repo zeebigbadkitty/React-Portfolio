@@ -1,7 +1,9 @@
 import React from "react";
 import "../css/style.css";
 
-export default function App() {
+
+export default function Portfolio() {
+  const projects=[]; // Minimum of 6 and map over components. 
   return ( 
 <div>
   <h2 id="sec1">Projects and Portfolio</h2>
@@ -16,7 +18,7 @@ export default function App() {
       <img src="//placehold.it/300x300" className="img-responsive" />
     </div>
     <div className="col-md-4">
-      <img src="//placehold.it/300x300" className="img-responsive" />
+      <img src="//placehold.it/300x300" className="img-responsive" /> 
     </div>
   </div>
 

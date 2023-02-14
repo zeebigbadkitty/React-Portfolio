@@ -2,7 +2,7 @@ import React from "react";
 import { MDBFooter, MDBContainer, MDBCol, MDBRow, } from "mdb-react-ui-kit";
 import '../css/style.css';   {/* Is this linked right?*/}
 
-export default function App() {
+export default function Footer() {
   return (
     <MDBFooter
       className="text-center text-lg-start text-white"
