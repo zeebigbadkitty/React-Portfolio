@@ -43,7 +43,7 @@ export default function Portfolio() {
       image: "//placehold.it/300x300",
       github: "google.com",
       deployed: "google.com",
-      description: "Blah",
+      description: "Project 6",
     },
   ];
 
@@ -62,10 +62,10 @@ export default function Portfolio() {
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
-                <a href={project.github} className="btn btn-primary">
+                <a href={project.github} className="btn btn-secondary btn-sm">
                   Github
                 </a>
-                <a href={project.deployed} className="btn btn-primary">
+                <a href={project.deployed} className="btn btn-secondary btn-sm">
                   Deployed
                 </a>
               </div>

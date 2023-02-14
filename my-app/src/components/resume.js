@@ -1,23 +1,44 @@
 import React from "react";
 import "../css/style.css";
+import { useState } from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
-export default function Resume() {
+const App = () => {
+	const [numPages, setNumPages] = useState(null);
+	const [pageNumber, setPageNumber] = useState(1);
+
+	const onDocumentLoadSuccess = ({ numPages }) => {
+		setNumPages(numPages);
+	};
+
+	const goToPrevPage = () =>
+		setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
+
+	const goToNextPage = () =>
+		setPageNumber(
+			pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
+		);
+
     return (
       <div>
           <hr />
          <h2 id="sec3">Resume</h2>
-          Images are responsive sed @mdo but sum are more fun peratis unde omnis
-          iste natus error sit voluptatem accusantium doloremque laudantium,
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-          quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-          porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed quia non numquam eius modi tempora
-          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-          enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut
+         <nav>
+				<button onClick={goToPrevPage}>Prev</button>
+				<button onClick={goToNextPage}>Next</button>
+				<p>
+					Page {pageNumber} of {numPages}
+				</p>
+			</nav>
 
-      </div>
-    );
-  }
+			<Document
+				file="../resume/resume.pdf" 
+				onLoadSuccess={onDocumentLoadSuccess}
+			>
+				<Page pageNumber={pageNumber} />
+			</Document>
+		</div>
+	);
+};
+
+export default App;
