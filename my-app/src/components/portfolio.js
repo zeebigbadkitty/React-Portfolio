@@ -60,7 +60,7 @@ export default function Portfolio() {
         For any questions or comments regarding the below applications, please
         don't hesitate to contact me.
       </p>
-      <div className="row">
+      <div className="row" id="card">
         {projects.map((project) => (
           <div className="col-md-4">
             <div className="card">

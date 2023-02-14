@@ -55,7 +55,7 @@ export default function Skills() {
     <div className="panel panel-default">
       <div className="panel-heading"><h3>Non-Technical Skills:</h3></div>
       <div className="panel-body">
-        Accountable, Adaptable, Agile mindset, Attention to detail, Capable of taking the lead, Client-focused, Disciplined, Efficient, Emotionally intelligent, Empathetic, Intellectually curious, Open to feedback, Organized, Practical, Problem solver, Receptive, Resilient, Task and goal oriented, Teachable, Team player, Time managing, Written and verbal communication.
+        Accountable, Adaptable, Agile mindset, Attention to detail, Capable of taking the lead, Client-focused, Disciplined, Efficient, Emotionally intelligent, Empathetic, Intellectually curious, Open to feedback, Organized, Practical, Problem solver, Receptive, Resilient, Task and goal oriented, Teachable, Team player, Time manager, Written and verbal communication.
       </div>
     </div>
   </div>

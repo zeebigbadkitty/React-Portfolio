@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/style.css'; 
+import photo2 from '../images/photo2.jpg';
 
 export default function Footer() {
   return (
@@ -26,6 +27,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <img src={photo2} class="photo2"></img>
           </div>
 
           <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
