@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/style.css';
 
+
 export default function Header() {
   
     return (
@@ -32,11 +33,13 @@ export default function Header() {
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
+
               id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
+              data-bs-theme="dark"
+              data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              
             >
               See More...
             </a>
@@ -81,7 +84,7 @@ export default function Header() {
         </div>
       </div>
     </div>
-    
+
     </div>
     );
   }

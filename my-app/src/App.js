@@ -5,6 +5,7 @@ import About from './components/about.js';
 import Portfolio from './components/portfolio.js';
 import Skills from './components/skills.js';
 import Body from './components/body.js';
+import Footer2 from './components/footer2.js';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Header />
     <Body />
     <Footer />
+    <Footer2 />
     </div>
  );
 

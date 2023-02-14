@@ -44,7 +44,7 @@ export default function Forms() {
             </div>
 
 
-            <button class="btn btn-info btn-block" type="submit">Send</button>
+            <button class="btn" type="submit">Send</button>
           </form>
 
         </div>
