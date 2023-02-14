@@ -4,6 +4,9 @@ import About from "./about.js";
 import Portfolio from "./portfolio.js";
 import Skills from "./skills.js";
 import Sidenav from "./sidenav";
+import Resume from "./resume";
+import Forms from "./forms";
+import Certs from "./certs";
 
 export default function Body() {
   return (
@@ -15,6 +18,9 @@ export default function Body() {
       <About />
       <Portfolio />
       <Skills />
+      <Resume />
+      <Certs />
+      <Forms />
       </div>
 
     </div>
