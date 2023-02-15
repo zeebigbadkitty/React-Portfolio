@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/style.css";
 import { useState } from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
-import resume from './resume/resume.pdf'
+
 
 export default function Resume() {
     return (

@@ -158,16 +158,13 @@ h2 {    color: #111155;
 }
 .card {  
   width: 300px;
-  height: 300px;
+  height: 450px;
   margin-bottom: 15px;}
 .photo2{
   height: 100px;
   width: 100px;
   border-radius: 50%;
   border:#cecbcb 3px solid;
-  margin-left: auto;
-  margin-right: auto;
-}
-.list-unstyled{
-justify-content:left;
+margin-left:100px;
+margin-right: 100px;
 }
