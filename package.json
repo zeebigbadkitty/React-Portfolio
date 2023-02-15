@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": " ",
+  "homepage": "https://zeebigbadkitty.github.io/React-Portfolio/",
   
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
