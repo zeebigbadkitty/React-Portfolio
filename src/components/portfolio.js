@@ -1,16 +1,18 @@
 import React from "react";
 import "../css/style.css";
+import HTMLCSS from "../images/htmlcss.png";
 import BOTTOMSUP from '../images/bottomsup.PNG';
 import SAFENYT from '../images/safenyt.png';
 import WEATHERDASHBOARD from '../images/weather.PNG';
 import SQLTRACKER from '../images/sqltracker.PNG';
+import REGEX from '../images/regex.PNG';
 
 
 export default function Portfolio() {
   const projects = [
     {
       title: "HTML And CSS Refactoring",
-      image: BOTTOMSUP,
+      image: HTMLCSS,
       github: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       deployed: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       description: "This was my first introduction to HTML and CSS. I was tasked with refactoring the code to make it more accessible and cleaner.",
@@ -38,14 +40,14 @@ export default function Portfolio() {
     },
     {
       title: "Regex Tutorial - E-mail Validation",
-      image: "../images/regex.png",
+      image: REGEX,
       github: "https://github.com/zeebigbadkitty/Regex-Tutorial",
       deployed: "https://github.com/zeebigbadkitty/Regex-Tutorial",
       description: "For this assignment, we had to hone our technical writing skills by creating a tutorial on a regex expression of our choice.",
     },
     {
       title: "Group Project - Bottoms Up",
-      image: "../images/bottomsup.png",
+      image: BOTTOMSUP,
       github: "https://github.com/zeebigbadkitty/Bottoms-Up",
       deployed: "https://bottoms-up-2023-app.herokuapp.com/",
       description: "In this group project, we worked together to create a fullstack application that would allow users to manage an inventory.",
