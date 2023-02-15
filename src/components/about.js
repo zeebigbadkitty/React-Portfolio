@@ -1,12 +1,12 @@
 import React from "react";
 import "../css/style.css";
-import Portfolio from './portfolio.js';
+// import Portfolio from './portfolio.js';
 
 export default function About() {
   return (
     <div>
-        <br />
-        <div className="about">
+      <br />
+      <div className="about">
         <h2 id="sec0">About Me</h2>
 
         <p>

@@ -1,34 +1,37 @@
 import React from "react";
 import "../css/style.css";
-
+import BOTTOMSUP from '../images/bottomsup.PNG';
+import SAFENYT from '../images/safenyt.png';
+import WEATHERDASHBOARD from '../images/weather.PNG';
+import SQLTRACKER from '../images/sqltracker.PNG';
 
 
 export default function Portfolio() {
   const projects = [
     {
       title: "HTML And CSS Refactoring",
-      image: "../images/safenyt.png",
+      image: BOTTOMSUP,
       github: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       deployed: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       description: "This was my first introduction to HTML and CSS. I was tasked with refactoring the code to make it more accessible and cleaner.",
     },
     {
       title: "Group Project - Safe Nyt",
-      image: "../images/safenyt.png",
+      image: SAFENYT,
       github: "https://github.com/ceca24/Project-Safe-Nyt",
       deployed: "https://ceca24.github.io/Project-Safe-Nyt/",
       description: "In this group project, we worked together to use APIs to create a website that would allow users to search for safe venues in the location of their choice.",
     },
     {
       title: "Weather Dashboard",
-      image: "../images/weather.png",
+      image: WEATHERDASHBOARD,
       github: "https://github.com/zeebigbadkitty/Weather-Dashboard",
       deployed: "https://github.com/zeebigbadkitty/Weather-Dashboard",
       description: "In this project, I used APIs to create a weather dashboard that would allow users to search for the weather in any city.",
     },
     {
       title: "SQL Employee Tracker",
-      image: "../images/sqltracker.png",
+      image: SQLTRACKER,
       github: "https://github.com/zeebigbadkitty/SQL-Employee-Tracker",
       deployed: "https://github.com/zeebigbadkitty/SQL-Employee-Tracker",
       description: "The task was to create an employee tracker using SQL and Node.js.",
@@ -58,7 +61,7 @@ export default function Portfolio() {
       </p>
       <div className="row" id="card">
         {projects.map((project) => (
-          <div className="col-md-4">
+          <div className="col-md-4" key={project.title}>
             <div className="card">
               <img src={project.image} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -74,7 +77,7 @@ export default function Portfolio() {
             </div>
           </div>
         ))}
-        
+
       </div>
     </div>
   );
