@@ -1,52 +1,47 @@
 import React from "react";
 import "../css/style.css";
-import htmlcss from "../images/htmlcss.png"; 
-import safenyt from "../images/safenyt.png"; 
-import weather from "../images/weather.PNG"; 
-import sqltracker from "../images/sqltracker.PNG"; 
-import regex from "../images/regex.PNG"; 
-import bottomsup from "../images/bottomsup.PNG"; 
+
 
 export default function Portfolio() {
   const projects = [
     {
       title: "HTML And CSS Refactoring",
-      image: {htmlcss},
+      image: "../images/htmlcss.png",
       github: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       deployed: "https://github.com/zeebigbadkitty/Advanced-CSS-Portfolio",
       description: "This was my first introduction to HTML and CSS. I was tasked with refactoring the code to make it more accessible and cleaner.",
     },
     {
       title: "Group Project - Safe Nyt",
-      image: {safenyt},
+      image: "../images/safenyt.png",
       github: "https://github.com/ceca24/Project-Safe-Nyt",
       deployed: "https://ceca24.github.io/Project-Safe-Nyt/",
       description: "In this group project, we worked together to use APIs to create a website that would allow users to search for safe venues in the location of their choice.",
     },
     {
       title: "Weather Dashboard",
-      image: {weather},
+      image: "../images/weather.PNG",
       github: "https://github.com/zeebigbadkitty/Weather-Dashboard",
       deployed: "https://github.com/zeebigbadkitty/Weather-Dashboard",
       description: "In this project, I used APIs to create a weather dashboard that would allow users to search for the weather in any city.",
     },
     {
       title: "SQL Employee Tracker",
-      image: {sqltracker},
+      image: "../images/sqltracker.PNG",
       github: "https://github.com/zeebigbadkitty/SQL-Employee-Tracker",
       deployed: "https://github.com/zeebigbadkitty/SQL-Employee-Tracker",
       description: "The task was to create an employee tracker using SQL and Node.js.",
     },
     {
       title: "Regex Tutorial - E-mail Validation",
-      image: {regex},
+      image: "../images/regex.PNG",
       github: "https://github.com/zeebigbadkitty/Regex-Tutorial",
       deployed: "https://github.com/zeebigbadkitty/Regex-Tutorial",
       description: "For this assignment, we had to hone our technical writing skills by creating a tutorial on a regex expression of our choice.",
     },
     {
       title: "Group Project - Bottoms Up",
-      image: {bottomsup},
+      image: "../images/bottomsup.PNG",
       github: "https://github.com/zeebigbadkitty/Bottoms-Up",
       deployed: "https://bottoms-up-2023-app.herokuapp.com/",
       description: "In this group project, we worked together to create a fullstack application that would allow users to manage an inventory.",

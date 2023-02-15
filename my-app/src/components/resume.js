@@ -1,61 +1,18 @@
 import React from "react";
 import "../css/style.css";
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
+import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 import resume from './resume/resume.pdf'
 
-export default function SinglePage(props) {
-	const [numPages, setNumPages] = useState(null);
-	const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
-  
-	function onDocumentLoadSuccess({ numPages }) {
-	  setNumPages(numPages);
-	  setPageNumber(1);
-	}
-  
-	function changePage(offset) {
-	  setPageNumber(prevPageNumber => prevPageNumber + offset);
-	}
-  
-	function previousPage() {
-	  changePage(-1);
-	}
-  
-	function nextPage() {
-	  changePage(1);
-	}
-  
-	const { pdf } = props;
-
-
+export default function Resume() {
     return (
 
 		<div>
           <hr />
          <h2 id="sec3">Resume</h2>
-      <Document
-        file={resume}
-        options={{ workerSrc: "/pdf.worker.js" }}
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page pageNumber={pageNumber} />
-      </Document>
-      <div>
-        <p>
-          Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-        </p>
-        <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-          Previous
-        </button>
-        <button
-          type="button"
-          disabled={pageNumber >= numPages}
-          onClick={nextPage}
-        >
-          Next
-        </button>
+		 <iframe src="https://docs.google.com/document/d/1h6zpG5DeQcUJ75cVd8QOLamo754y6HdKeizJhXSKPDs" frameborder="0" height="500px" width="100%"></iframe>
       </div>
-</div>
+
 	);
 };
 
