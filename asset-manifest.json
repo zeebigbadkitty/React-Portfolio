@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.a433960c.css",
-    "main.js": "/React-Portfolio/static/js/main.c1b5cb62.js",
+    "main.js": "/React-Portfolio/static/js/main.57f480c6.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/safenyt.png": "/React-Portfolio/static/media/safenyt.7a7b5376490eace03440.png",
     "static/media/bottomsup.PNG": "/React-Portfolio/static/media/bottomsup.1ee713994f2548a0ef30.PNG",
@@ -11,14 +11,15 @@
     "static/media/htmlcss.png": "/React-Portfolio/static/media/htmlcss.7ce14a089f8a461b112a.png",
     "static/media/cardgif.gif": "/React-Portfolio/static/media/cardgif.b135c1c19acbde354236.gif",
     "static/media/weather.PNG": "/React-Portfolio/static/media/weather.c949c319ad805d9cb9b0.PNG",
+    "static/media/operationwellness.PNG": "/React-Portfolio/static/media/operationwellness.a8ae61fbf7bae3a718f5.PNG",
     "static/media/regex.PNG": "/React-Portfolio/static/media/regex.573539ababb3b8d2933b.PNG",
     "index.html": "/React-Portfolio/index.html",
     "main.a433960c.css.map": "/React-Portfolio/static/css/main.a433960c.css.map",
-    "main.c1b5cb62.js.map": "/React-Portfolio/static/js/main.c1b5cb62.js.map",
+    "main.57f480c6.js.map": "/React-Portfolio/static/js/main.57f480c6.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a433960c.css",
-    "static/js/main.c1b5cb62.js"
+    "static/js/main.57f480c6.js"
   ]
 }
