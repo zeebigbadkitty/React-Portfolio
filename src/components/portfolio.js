@@ -6,6 +6,7 @@ import SAFENYT from '../images/safenyt.png';
 import WEATHERDASHBOARD from '../images/weather.PNG';
 import SQLTRACKER from '../images/sqltracker.PNG';
 import REGEX from '../images/regex.PNG';
+import OPERATIONWELLNESS from '../images/operationwellness.PNG';
 
 
 export default function Portfolio() {
@@ -51,6 +52,13 @@ export default function Portfolio() {
       github: "https://github.com/zeebigbadkitty/Bottoms-Up",
       deployed: "https://bottoms-up-2023-app.herokuapp.com/",
       description: "In this group project, we worked together to create a fullstack application that would allow users to manage an inventory.",
+    },
+    {
+      title: "Group Project - Operation Wellness",
+      image: OPERATIONWELLNESS,
+      github: "https://github.com/zeebigbadkitty/Operation-Wellness",
+      deployed: "https://operation-wellness-rsb.herokuapp.com/",
+      description: "This group project was a MERN stack medication management application.",
     },
   ];
 
